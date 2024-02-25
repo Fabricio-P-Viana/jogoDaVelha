@@ -34,6 +34,6 @@ Para jogador 1:
 
 Para jogador 2:
 
-9 | 13 | 17  ou 12 | 13 | 14 ou 11 | 13 | 15
+9 | 13 | 17 ou 11 | 13 | 15
 
 Assim, desenvolvi o algoritmo de resolução, criando uma pequena otimização colocando um contador que verifica a quantidade de jogadas. Somente quando as jogadas chegarem a 5, que é o mínimo para um jogador vencer, ele fará toda essa verificação acima. Também verifiquei o empate: caso chegue a 9 o número de jogadas e não houver vencedor, o jogo termina em empate.
