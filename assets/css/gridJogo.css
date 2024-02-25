@@ -1,0 +1,69 @@
+#displayJogoContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    inset: 0;
+    }
+    
+#displayJogoButton0 { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+#displayJogoButton1 { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+#displayJogoButton2 { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+#displayJogoButton3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+#displayJogoButton4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+#displayJogoButton5 { 
+    grid-area: 2 / 3 / 3 / 4; 
+}
+#displayJogoButton6 { 
+    grid-area: 3 / 1 / 4 / 2; 
+}
+#displayJogoButton7 { 
+    grid-area: 3 / 2 / 4 / 3; 
+}
+#displayJogoButton8 { 
+    grid-area: 3 / 3 / 4 / 4; 
+}
+.jogoButton{
+    background-color: rgba(0, 0, 0, 0.3); 
+    margin: 0px;
+    height: 120px;
+    width: 120px;
+    color: black;
+    font-size: 5em;
+}
+
+.containerJogo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+#jogadorAtual{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 1.5em;
+}
+@media (max-width: 390px) {
+    .jogoButton{
+        height: 80px;
+        width: 80px;
+    }
+}

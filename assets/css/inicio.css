@@ -1,0 +1,42 @@
+.centro-inicio{
+    display: block;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    margin: 20px;
+    & .titulo{
+        font-size: 50px;
+        color:white;
+        align-self: center;
+    }
+    & .startButton{
+    background-color: var(--cor-background-principal);
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    margin: 0px 20px;
+    & .imgButtonStart{
+        width: 60px;
+        height: auto;
+        }
+    }   
+}
+.containerPlay{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 20%;
+    margin: 20px;
+   
+}
+.containerTitulo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 40%;
+    margin: 20px;
+    padding-bottom: 20px;
+}

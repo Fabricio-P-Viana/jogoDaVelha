@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root{
+    --titulo:"Orbitron", sans-serif;
+    --paragrafo:"Kdam Thmor Pro", sans-serif;
+    --cor-principal: #1fbee1;
+    --cor-background-principal: #212121;
+}
+*{
+    font-family: "Orbitron", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #212121;
+}
+button{
+    border: none;
+}
+.header,footer,.descricaoJogador{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.header{
+    top: 0;
+}
+.footer{
+    bottom: 0;
+}
+footer {
+    font-family: var(--font-paragrafos);
+    padding: 40px 10%;
+    justify-content: space-between;
+    z-index: 4;
+    & .links{
+        display: flex;
+        justify-self: end;
+        & img{
+            height: 50px;
+        }
+    }
+    & p {
+        color: white;
+    }
+}
+.descricaoJogador{
+    bottom: 15%;
+    color: white;
+}
+.minhaLogo{
+    margin: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+    width: 100%;
+}
+.imgHeader{
+    height: 60px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.popup {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-principal);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: var(--cor-background-principal);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    font-family: var(--font-paragrafos);
+}
+
+.popup button:hover {
+    background-color: var(--cor-background-principal);
+}
+
+@media (max-width: 500px) {
+    .centro-inicio{
+        margin: 10px;
+        padding: 0px 10px;
+        & .containerTitulo .titulo{
+            font-size: 25px;
+        }
+        & .startButton{
+        width: 50px;
+        height: 50px;
+        & .imgButtonStart{
+            width: 50px;
+            height: auto;
+            }
+        }   
+    }
+    footer{
+        font-size: 0.7em;
+        padding: 20px 40px;
+        & .links{
+            & img{
+                height: 30px;
+            }
+        }
+    }
+}

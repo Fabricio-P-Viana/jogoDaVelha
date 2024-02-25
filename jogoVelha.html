@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/gridJogo.css">
+    <link rel="stylesheet" href="/assets/css/particulas.css">
+    <link rel="shortcut icon" href="./assets/src/logoIcone.png" type="image/x-icon">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="bolhasContainer">
+        <div class="particulas">
+            <span style="--i:11"></span><span style="--i:12"></span><span style="--i:24"></span><span style="--i:10"></span>
+            <span style="--i:14"></span><span style="--i:23"></span><span style="--i:18"></span><span style="--i:16"></span>
+            <span style="--i:19"></span><span style="--i:20"></span><span style="--i:22"></span><span style="--i:25"></span>
+            <span style="--i:18"></span><span style="--i:21"></span><span style="--i:13"></span><span style="--i:15"></span>
+            <span style="--i:26"></span><span style="--i:17"></span><span style="--i:13"></span><span style="--i:28"></span>
+            <span style="--i:11"></span><span style="--i:12"></span><span style="--i:24"></span><span style="--i:10"></span>
+            <span style="--i:14"></span><span style="--i:23"></span><span style="--i:18"></span><span style="--i:16"></span>
+            <span style="--i:19"></span><span style="--i:20"></span><span style="--i:22"></span><span style="--i:25"></span>
+            <span style="--i:18"></span><span style="--i:21"></span><span style="--i:13"></span><span style="--i:15"></span>
+            <span style="--i:26"></span><span style="--i:17"></span><span style="--i:13"></span><span style="--i:28"></span>
+            <span style="--i:18"></span><span style="--i:21"></span><span style="--i:13"></span><span style="--i:15"></span>
+            <span style="--i:26"></span><span style="--i:17"></span><span style="--i:13"></span><span style="--i:28"></span>
+            <span style="--i:11"></span><span style="--i:12"></span><span style="--i:24"></span><span style="--i:10"></span>
+        </div>
+    </div>
+    <header class="header">
+        <div class="minhaLogo">
+            <a href="https://fabricio-p-viana.github.io/meuPortifolio/"><img src="./assets/src/meu_logo.png" class="imgHeader"></a>
+            <a href="index.html"><img src="./assets/src/home.png" height="40px"></a>
+        </div>
+    </header>
+    <section class="containerJogo">
+        <div id="displayJogoContainer"></div>
+        <div class="descricaoJogador"><p>Jogador Atual:</p></div>
+        <div id="jogadorAtual"></div>
+    </section>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+          <h2 id="popupMessage"></h2>
+          <button onclick="closePopup(); window.location.href='jogoVelha.html'">Jogar Novamente</button>
+          <button onclick="closePopup(); window.location.href='index.html'">Voltar</button>
+        </div>
+      </div>
+    <footer class="footer">
+        <div class="direitos"></div>
+        <div class="links">
+            <a href="https://fabricio-p-viana.github.io/meuPortifolio/index.html#Contato"><img src="./assets/src/footer/email.png" ></a>
+            <a href="https://www.instagram.com/fabriciopviana/"><img src="./assets/src/footer/instagram.png" ></a>
+            <a href="https://www.linkedin.com/in/fabrício-pereira-viana-950377203"><img src="./assets/src/footer/linkedinBranco.png" ></a>
+        </div> 
+    </footer>
+    <script src="/assets/js/jogoVelha.js"></script>
+</body>
+</html>
